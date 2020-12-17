@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+html {
+    margin: 0;
+}
+
+body {
+    background-color: #dfdfdf;
+    background: url("bilder/bakgrunn.png") no-repeat center center fixed;
+    font-family: 'News Cycle', sans-serif;
+}
+
+main {
+    max-width: 970px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+main h1, main p {
+    padding: 10px;
+}
+main a, main div {
+    background-color: white;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgb(71, 71, 71);
+    transition: 0.2s;
+}
+main a:hover, main div:hover {
+    box-shadow: 0px 0px 6px rgb(71, 71, 71);
+    color: rgba(27, 27, 27, 0.7);
+}
+main img, main video {
+    width: 100%;
+}
+
+main p {
+    font-size: 20px;
+}
+
+main ol {
+    font-size: 20px;
+}
+
+a {
+    background-color: white;
+}
+
+nav {
+    background-color: rgb(71, 71, 71);
+    display: grid;
+    grid-template-columns: auto repeat(6, 1fr);
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+nav a {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0px;
+    margin-top: -3px;
+}
+nav a:hover {
+    background-color: rgb(59, 59, 59);
+}
+nav .heim {
+    background-color: rgb(48, 48, 48);
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+.kol-1 {grid-column: span 1;}
+.kol-2 {grid-column: span 2;}
+.kol-3 {grid-column: span 3;}
+.kol-4 {grid-column: span 4;}
+.kol-5 {grid-column: span 5;}
+.kol-6 {grid-column: span 6;}
+.kol-7 {grid-column: span 7;}
+.kol-8 {grid-column: span 8;}
+.kol-9 {grid-column: span 9;}
+.kol-10 {grid-column: span 10;}
+.kol-11 {grid-column: span 11;}
+.kol-12 {grid-column: span 12;}
+
+@media (max-width: 640px){
+    .kol-1, .kol-2, .kol-3, .kol-4, .kol-5, .kol-6, .kol-7, .kol-8, .kol-9, .kol-10, .kol-11, .kol-12 {
+        grid-column: span 12;
+    }
+}
